@@ -25,3 +25,19 @@ export interface Task {
   parent_id: string,
   url: string
 }
+
+export interface TaskSync {
+  items: {
+    completed_at: string,
+    content: string,
+    id: string,
+    item_object: any,
+    meta_data: any,
+    note_count: number,
+    notes: string[],
+    project_id: string,
+    section_id: any,
+    task_id: string,
+    user_id: string
+  }[]
+}
